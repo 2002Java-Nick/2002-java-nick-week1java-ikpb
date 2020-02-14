@@ -1,6 +1,5 @@
 package com.revature.eval.java.core;
 
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.Temporal;
@@ -553,7 +552,6 @@ public class EvaluationService {
 					break;
 				}
 			}
-			System.out.println(primeHold.get(i-1));
 		}
 //		if((i*i)>=smallerNumber) {
 //			for(int j = 3; primeHold.get(j) <=Math.sqrt(bigNumber);j+=2) {
@@ -727,9 +725,10 @@ public class EvaluationService {
 		char[] checkCheck = string1.toCharArray();
 		boolean val = false;
 		int storeISBNTotalValue = 0;
+		int x=10;
 		//check to see if string has any char in it
-				for(int x : checkCheck) {
-					if(Character.isDigit((char)(x))) {
+				for(int y : checkCheck) {
+					if(Character.isDigit((char)(y))) {
 						val = true;
 					}else if(checkCheck[9]=='x') {
 							val =true;
@@ -742,7 +741,7 @@ public class EvaluationService {
 					
 					if(storeISBNTotalValue%11==0) {
 						val = true;
-					}else if(checkCheck[9]=='x') {
+					}else if(checkCheck[9]=='y') {
 						val =true;
 					}else {
 						val = false;
