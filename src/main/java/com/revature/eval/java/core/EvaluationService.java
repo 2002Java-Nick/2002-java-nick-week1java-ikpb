@@ -725,10 +725,9 @@ public class EvaluationService {
 		char[] checkCheck = string1.toCharArray();
 		boolean val = false;
 		int storeISBNTotalValue = 0;
-		int x=10;
 		//check to see if string has any char in it
-				for(int y : checkCheck) {
-					if(Character.isDigit((char)(y))) {
+				for(int x : checkCheck) {
+					if(Character.isDigit((char)(x))) {
 						val = true;
 					}else if(checkCheck[9]=='x') {
 							val =true;
@@ -741,7 +740,7 @@ public class EvaluationService {
 					
 					if(storeISBNTotalValue%11==0) {
 						val = true;
-					}else if(checkCheck[9]=='y') {
+					}else if(checkCheck[9]=='x') {
 						val =true;
 					}else {
 						val = false;
